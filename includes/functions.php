@@ -375,8 +375,8 @@
 		$row = $SelectQuery->fetch();
 		$row = $row['content'];
 		$subject = "Comment notify";
-		$message = "Good day, $email someone commented on your post http://localhost:8080/Camagru/lookAll.php?img=$img";
-		$headers = "From: jrheeder@student.wethinkcode.co.za";
+		$message = "Good day, $email someone commented on your post http://localhost:8081/Camagru/lookAll.php?img=$img";
+		$headers = "From: tseanego@student.wethinkcode.co.za";
 		mail($email,$subject,$message,$headers);
 	}
 	function echoComments($img) {
